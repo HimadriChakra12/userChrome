@@ -26,3 +26,12 @@
     border: 2px solid wheat!important;
     border-radius: 0px !important;
 }
+#main-window:-moz-window-inactive #urlbar:not(:focus-within) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+#urlbar:not(:focus-within) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
