@@ -41,11 +41,6 @@ menupopup menuitem, menupopup menu {
     opacity: 0 !important;
     visibility: hidden !important;
 }
-#urlbar:not(:focus-within) {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
 #nav-bar,
 #TabsToolbar {
     min-height: 36px !important;
