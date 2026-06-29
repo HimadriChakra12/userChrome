@@ -30,8 +30,3 @@
     opacity: 0 !important;
     visibility: hidden !important;
 }
-#urlbar:not(:focus-within) {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
