@@ -182,3 +182,5 @@ user_pref("browser.sessionstore.interval", 30000);
 user_pref("network.http.max-connections-per-server", 8);
 
 user_pref("dom.ipc.processCount", 8);
+
+user_pref("browser.urlbar.update2.engineAliasRefresh", true);

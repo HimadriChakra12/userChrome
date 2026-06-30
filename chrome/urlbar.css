@@ -10,6 +10,7 @@
     border-radius: 0px !important;
     box-shadow: none !important;
     border: 2px solid wheat!important;
+    transition: 0px !important;
 }
 #urlbar:active,
 #urlbar:focus-within {
@@ -25,6 +26,7 @@
     padding: 20px !important;
     border: 2px solid wheat!important;
     border-radius: 0px !important;
+    transition: 0px !important;
 }
 #main-window:-moz-window-inactive #urlbar:not(:focus-within) {
     opacity: 0 !important;
