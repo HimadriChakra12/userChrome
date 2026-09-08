@@ -19,8 +19,8 @@
 /* #context-translate-selection,          /* Translate Selection to [English] */
 #frame-sep,                            /************ Separator *************/
 /* #context-viewpartialsource-selection,  /* View Selection Source            */
-/* #context-inspect-a11y,                 /* Inspect Accessibility Properties */
-/* #context-inspect,                      /* Inspect (Q)                      */
+#context-inspect-a11y,                 /* Inspect Accessibility Properties */
+#context-inspect,                      /* Inspect (Q)                      */
 
 #leave_this_dummy_here
     { display:none !important; }
