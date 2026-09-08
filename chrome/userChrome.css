@@ -1,6 +1,6 @@
 @import url(theme/urlbar.css);
 @import url(theme/extension.css);
-@import url(theme/pdfjs.css);
+@import url(theme/verticaltabs.css);
 
 *{
 	border-radius: 0px !important;
