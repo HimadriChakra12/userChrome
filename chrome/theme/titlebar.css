@@ -1,0 +1,8 @@
+section[aria-label="User status and settings"]{
+    position: absolute;
+    height: 54px;
+}
+section[aria-label="User status and settings"]:has([class="rtcConnectionStatusWrapper__06d62"]):hover{
+
+    height: 150px;
+}

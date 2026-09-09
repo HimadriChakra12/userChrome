@@ -2,6 +2,7 @@
 @import url(theme/extension.css);
 @import url(theme/verticaltabs.css);
 @import url(theme/menu.css);
+@import url(theme/titlebar.css);
 
 *{
 	border-radius: 0px !important;
