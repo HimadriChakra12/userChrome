@@ -38,4 +38,24 @@
       visibility: hidden;
     }
   }
+  #TabsToolbar {
+      min-height: 28px !important;
+  }
+
+  .tabbrowser-tab:not([pinned]) {
+      max-height: 28px !important;
+  }
+
+  .tabbrowser-tab:not([pinned]) .tab-icon-image {
+      width: 12px !important;
+      height: 12px !important;
+      margin: 0 !important;
+      margin-right: 7px !important;
+  }
+
+  .tabbrowser-tab:is([pinned]) .tab-icon-image {
+      width: 12px !important;
+      height: 12px !important;
+      margin: 0 !important;
+  }
 }
