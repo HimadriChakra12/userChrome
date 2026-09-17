@@ -6,7 +6,7 @@
     background: #282828 !important;
     box-shadow: 0 4px 24px rgba(0,0,0,0.18);
     color: #e0e0e0 !important;
-    min-height: 65px !important;
+    min-height: 50px !important;
     border-radius: 0px !important;
     box-shadow: none !important;
     border: 2px solid wheat!important;
@@ -48,3 +48,31 @@
 #urlbar-input-container {
   min-height: 26px !important;
 }
+
+/* --- DEBLOAT URLBAR ----------------------------------- */
+
+#pageActionButton { display: none; }
+#pocket-button { display: none; }
+#urlbar-zoom-button { display: none; }
+#tracking-protection-icon-container { display: none !important; }
+#reader-mode-button{ display: none !important; }
+/* #star-button { display: none; } */
+/* #star-button-box:hover { background: inherit !important; } */
+#urlbar-searchmode-switcher { display: none; }
+#searchmode-switcher-chicklet { display: none !important; }
+
+/* hide container indicators; we indicate container by changing tab title text color */
+#identity-icon-box {
+	margin-inline-end: 0 !important;
+	padding: 0 4px !important;
+}
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+	display: none !important;
+}
+
+/* Go to arrow button at the end of the urlbar when searching */
+.urlbar-go-button, #urlbar-revert-button-container { display: none !important; }
+
+/* remove container indicator from urlbar */
+#userContext-label, #userContext-indicator { display: none !important;}
+
