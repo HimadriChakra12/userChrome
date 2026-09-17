@@ -83,6 +83,6 @@
 
 /* Move up the content view — only under the narrow nav-bar's own column,
    not the full width, so it stops shifting content behind the tab strip */
-:root[sessionrestored]:not([chromehidden~="toolbar"]) > body > #browser {
+:root[sessionrestored]:not([chromehidden~="toolbar"]):not([inFullscreen]) > body > #browser {
 	margin-top: -36px !important;
 }

@@ -6,6 +6,10 @@
 @import url(theme/toolbar.css);
 @import url(theme/autohide.css);
 
+/*
+@import url(theme/numbertabs.css);
+*/
+
 *{
 	border-radius: 0px !important;
 	font-family: 'Jetbrains Mono' !important;
