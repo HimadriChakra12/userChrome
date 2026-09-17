@@ -4,8 +4,6 @@
 	--arrowpanel-border-radius: 0 !important;
 	--arrowpanel-menuitem-border-radius: 0 !important;
 	--toolbarbutton-border-radius: 0 !important;
-	--toolbar-field-focus-background-color: var(--urlbar-focused-bg-color) !important;
-	--toolbar-field-background-color: var(--urlbar-not-focused-bg-color) !important;
 	--toolbar-field-focus-border-color: transparent !important;
 	--chrome-block-radius: 0 !important;
 	--urlbar-border-radius: 0 !important;
