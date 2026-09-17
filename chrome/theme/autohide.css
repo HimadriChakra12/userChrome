@@ -1,11 +1,19 @@
-/* --- AUTOHIDE NAVBAR ---------------------------------- */
+/* --- AUTOHIDE NAVBAR (right-docked, narrow) ------------ */
 
 :root {
 	--uc-navbar-transform: calc(0px - 24px);
+	--uc-navbar-width: 60rem; /* tweak to taste */
 }
 
 #navigator-toolbox > div {
 	display: contents;
+}
+
+/* Shrink nav-bar and dock it to the right instead of full width */
+#nav-bar {
+	width: var(--uc-navbar-width) !important;
+	max-width: var(--uc-navbar-width) !important;
+	margin-inline-start: auto !important; /* pushes it to the right */
 }
 
 :root[sessionrestored] :where(
@@ -25,6 +33,28 @@
 ) {
 	transform: none !important;
 	opacity: 1 !important;
+	pointer-events: auto !important;
+}
+
+/* Reveal on hover — same triggers as before, now also re-enable clicks */
+#titlebar:hover ~ .browser-toolbar,
+.browser-titlebar:hover ~ :is(#nav-bar, #PersonalToolbar),
+#nav-bar:hover,
+#nav-bar:hover + #PersonalToolbar {
+	transform: translateY(0);
+	opacity: 1;
+	pointer-events: auto;
+}
+
+#mainPopupSet:has(> [panelopen]:not(
+	#ask-chat-shortcuts,
+	#selection-shortcut-action-panel,
+	#chat-shortcuts-options-panel,
+	#tab-preview-panel
+)) ~ #navigator-toolbox > .browser-toolbar {
+	transform: translateY(0);
+	opacity: 1;
+	pointer-events: auto;
 }
 
 #nav-bar:not([customizing]) {
@@ -35,7 +65,7 @@
 
 #titlebar {
 	position: relative;
-	z-index: 3;
+	z-index: 1;
 }
 
 #navigator-toolbox,
@@ -46,27 +76,9 @@
 	z-index: auto !important;
 }
 
-/* Show when toolbox is hovered */
-#titlebar:hover ~ .browser-toolbar,
-.browser-titlebar:hover ~ :is(#nav-bar, #PersonalToolbar),
-#nav-bar:hover,
-#nav-bar:hover + #PersonalToolbar {
-	transform: translateY(0);
-	opacity: 1;
-}
 
-/* This ruleset is separate, because not having :has support breaks other selectors as well */
-#mainPopupSet:has(> [panelopen]:not(
-	#ask-chat-shortcuts,
-	#selection-shortcut-action-panel,
-	#chat-shortcuts-options-panel,
-	#tab-preview-panel
-)) ~ #navigator-toolbox > .browser-toolbar {
-	transform: translateY(0);
-	opacity: 1;
-}
-
-/* Move up the content view */
+/* Move up the content view — only under the narrow nav-bar's own column,
+   not the full width, so it stops shifting content behind the tab strip */
 :root[sessionrestored]:not([chromehidden~="toolbar"]) > body > #browser {
-	margin-top: -35px !important;
+	margin-top: -36px !important;
 }
