@@ -63,6 +63,10 @@
 	z-index: 2;
 }
 
+#nav-bar:not([customizing]):hover{
+	opacity: 1;
+}
+
 #titlebar {
 	position: relative;
 	z-index: 1;
