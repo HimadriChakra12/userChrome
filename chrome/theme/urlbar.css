@@ -6,7 +6,7 @@
     background: #282828 !important;
     box-shadow: 0 4px 24px rgba(0,0,0,0.18);
     color: #e0e0e0 !important;
-    min-height: 50px !important;
+    min-height: 65px !important;
     border-radius: 0px !important;
     box-shadow: none !important;
     border: 2px solid wheat!important;
@@ -46,7 +46,7 @@
 }
 
 #urlbar-input-container {
-  min-height: 26px !important;
+  min-height: 20px !important;
 }
 
 /* --- DEBLOAT URLBAR ----------------------------------- */
