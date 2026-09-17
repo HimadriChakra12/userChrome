@@ -2,7 +2,7 @@
 
 :root {
 	--uc-navbar-transform: calc(0px - 24px);
-	--uc-navbar-width: 60rem; /* tweak to taste */
+	--uc-navbar-width: 80%; /* tweak to taste */
 }
 
 #navigator-toolbox > div {
