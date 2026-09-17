@@ -4,6 +4,7 @@
 @import url(theme/menu.css);
 @import url(theme/titlebar.css);
 @import url(theme/toolbar.css);
+@import url(theme/autohide.css);
 
 *{
 	border-radius: 0px !important;
@@ -17,6 +18,14 @@ menupopup menuitem, menupopup menu {
     padding-inline-start: 0 !important; /* Remove extra space where icon was */
 }
 
+#identity-icon-box.identity-box-button,
+#sidebar-button,
+#back-button,
+#forward-button,
+#reload-button,
+#stop-button,
+#home-button,
+#library-button,
 #tabs-newtab-button,
 #private-browsing-indicator-with-label {
 	display: none;
