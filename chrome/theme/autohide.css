@@ -2,18 +2,25 @@
 
 :root {
 	--uc-navbar-transform: calc(0px - 24px);
-	--uc-navbar-width: 80%; /* tweak to taste */
+	--uc-navbar-width: 800px; /* tweak to taste */
+	--uc-navbar-hover-width: 80%; /* tweak to taste */
 }
 
 #navigator-toolbox > div {
 	display: contents;
 }
 
-/* Shrink nav-bar and dock it to the right instead of full width */
 #nav-bar {
 	width: var(--uc-navbar-width) !important;
 	max-width: var(--uc-navbar-width) !important;
-	margin-inline-start: auto !important; /* pushes it to the right */
+	margin-inline-start: auto !important;
+}
+
+/* Expand when URL bar / anything inside nav-bar is focused */
+#nav-bar:focus-within {
+	width: var(--uc-navbar-hover-width) !important;
+	max-width: var(--uc-navbar-hover-width) !important;
+	margin-inline-start: auto !important;
 }
 
 :root[sessionrestored] :where(
